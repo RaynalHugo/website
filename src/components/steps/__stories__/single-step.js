@@ -3,7 +3,7 @@ import React from "react";
 
 import { SingleStep } from "../single-step";
 
-storiesOf("SingleStep", module)
+storiesOf("Steps/SingleStep", module)
   .add("basic", () => <SingleStep />)
   .add("basic first", () => <SingleStep first />)
   .add("basic last", () => <SingleStep last />)

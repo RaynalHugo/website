@@ -1,8 +1,9 @@
 import React from "react";
 import { map, size } from "lodash/fp";
-const mapUncapped = map.convert({ cap: false });
 
 import { SingleStep } from "./single-step";
+
+const mapUncapped = map.convert({ cap: false });
 
 export const Steps = ({
   axis = "horizontal",
@@ -23,8 +24,7 @@ export const Steps = ({
         alignItems: "flex-start",
         height,
         width
-      }}
-    >
+      }}>
       {mapUncapped(
         (step, index) => (
           <SingleStep

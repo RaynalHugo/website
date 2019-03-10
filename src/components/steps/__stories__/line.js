@@ -3,7 +3,7 @@ import React from "react";
 
 import { Line } from "../line";
 
-storiesOf("Line", module)
+storiesOf("Steps/Line", module)
   .add("basic", () => <Line />)
   .add("vertical", () => (
     <div style={{ height: 500 }}>

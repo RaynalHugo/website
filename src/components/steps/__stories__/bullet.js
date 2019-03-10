@@ -3,7 +3,7 @@ import React from "react";
 
 import { Bullet } from "../bullet";
 
-storiesOf("Bullet", module)
+storiesOf("Steps/Bullet", module)
   .add("basic", () => <Bullet />)
   .add("small", () => <Bullet diameter={20} />)
   .add("big", () => <Bullet diameter={200} />)

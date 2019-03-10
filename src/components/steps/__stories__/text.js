@@ -3,4 +3,4 @@ import React from "react";
 
 import { Text } from "../text";
 
-storiesOf("Text", module).add("basic", () => <Text>Bonjour</Text>);
+storiesOf("Steps/Text", module).add("basic", () => <Text>Bonjour</Text>);
