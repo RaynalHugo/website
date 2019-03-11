@@ -10,6 +10,7 @@ export const Code = styled(`code`)(
     margin: "0.1em",
     boxSizing: "border-box",
     width: "fit-content",
+    fontSize: "0.8em",
     ...style
   })
 );

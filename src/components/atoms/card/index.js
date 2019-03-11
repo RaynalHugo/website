@@ -7,7 +7,7 @@ export const Card = styled(`div`)(
     borderRadius: "0.25em",
     backgroundColor: backgroundColor,
     padding: "1em",
-    margin: "0.25em",
+    margin: "1em",
     boxSizing: "border-box",
     width: "fit-content",
     height: "fit-content",
