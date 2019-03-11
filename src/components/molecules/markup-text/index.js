@@ -4,14 +4,15 @@ import styled from "@emotion/styled";
 import { Code } from "../../atoms/code";
 import { Span, P, H1, H2 } from "../../atoms/text";
 
-const SpanWrapper = styled("div")({
+const SpanWrapper = styled("span")({
   display: "flex",
   flexDirection: "row"
 });
 
 const PWrapper = styled("div")({
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
+  margin: "1em 0px"
 });
 
 const H1Wrapper = styled("div")({
@@ -26,18 +27,29 @@ const H2Wrapper = styled("div")({
   margin: "0.83em 0px"
 });
 
-export const MarkupSpan = ({ children, codeProps, ...otherProps }) => (
+export const MarkupSpan = ({ children, codeProps, style, ...otherProps }) => (
   <SpanWrapper>
     <Code {...codeProps}>{"<span>"}</Code>
-    <Span {...otherProps}>{children}</Span>
+    <Span style={{ margin: "auto 0px", ...style }} {...otherProps}>
+      {children}
+    </Span>
     <Code {...codeProps}>{"</span>"}</Code>
   </SpanWrapper>
 );
 
-export const MarkupP = ({ children, codeProps, ...otherProps }) => (
+export const MarkupP = ({ children, codeProps, style, ...otherProps }) => (
   <PWrapper>
     <Code {...codeProps}>{"<p>"}</Code>
-    <P {...otherProps}>{children}</P>
+    <P
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        ...style
+      }}
+      {...otherProps}>
+      {children}
+    </P>
     <Code {...codeProps}>{"</p>"}</Code>
   </PWrapper>
 );

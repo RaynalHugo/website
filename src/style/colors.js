@@ -1,4 +1,4 @@
-export const red = {
+export const Red = {
   "50": "#FFEBEE",
   "100": "#FFCDD2",
   "200": "#EF9A9A",

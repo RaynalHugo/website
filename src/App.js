@@ -7,17 +7,14 @@ import { Home } from "./components/home";
 class App extends Component {
   render() {
     return (
-      <html>
-        <head>
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto"
-            rel="stylesheet"
-          />
-        </head>
-        <body>
-          <Home />
-        </body>
-      </html>
+      <React.Fragment>
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto"
+          rel="stylesheet"
+        />
+
+        <Home />
+      </React.Fragment>
     );
   }
 }

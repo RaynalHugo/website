@@ -9,6 +9,13 @@ export const Span = styled(`span`)(({ color, style }) => ({
 export const P = styled(`p`)(({ color, style }) => ({
   color: color,
   fontFamily: "roboto",
+  textIndent: "1em",
+  margin: "0px",
+  display: "flex",
+  flexDirection: "row",
+  "& span": {
+    textIndent: "0px"
+  },
   ...style
 }));
 
